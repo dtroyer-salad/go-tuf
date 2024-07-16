@@ -18,14 +18,9 @@
 package main
 
 import (
-	"fmt"
-	"os"
-
 	tuf "github.com/theupdateframework/go-tuf/v2/examples/cli/tuf/cmd"
 )
 
 func main() {
-	fmt.Println("Not implemented")
-	os.Exit(1)
 	tuf.Execute()
 }

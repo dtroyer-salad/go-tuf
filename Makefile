@@ -86,6 +86,10 @@ example-multirepo:
 	@echo "Executing the following example - multirepo/client/client_example.go"
 	@cd examples/multirepo/client/ && go run .
 
+# Target for demoing the tuf cli
+.PHONY: example-tuf-cli
+example-tuf-cli: build-tuf
+
 # Target for demoing the tuf-client cli
 .PHONY: example-tuf-client-cli
 example-tuf-client-cli: build-tuf-client
