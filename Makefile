@@ -128,3 +128,11 @@ clean:
 	@rm -rf tuf_metadata
 	@rm -f tuf-client
 	@rm -f root.json
+
+# Local Testing
+.PHONY: test-tuf
+test-tuf:
+	rm -rf tuf_*
+	./tuf init
+	ln tuf_metadata/1.root.json tuf_metadata/root.json
+	cp -p C* tuf_download
